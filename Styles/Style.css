@@ -15,7 +15,7 @@ body {
     
 }
 .navbar {
-    background-color: #b98446;
+    background-color: #ac712e;
     font-family: Arial, sans-serif;
     font-size: 1.2rem;
     align-items: center;
@@ -67,6 +67,7 @@ body {
     align-items: center;
     list-style: none;
     text-align: center;
+
 }
 .navbar_links {
 color: #fff;
@@ -98,7 +99,7 @@ color: #fff;
   }
   .btn-banner {
     margin-top: 20px;
-    background-color: #ff69b4;
+    background-color: #ac712e;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -152,13 +153,65 @@ color: #fff;
     padding: 50px 20px;
     text-align: center;
   }
-  .btn-contato {
-    background-color: #ff69b4;
-    color: white;
-    padding: 10px 20px;
+  
+  .social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
     text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    list-style: none;
+
+}
+  .links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1.5rem;
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+    transition: all 0.2s;
+}
+
+#instagram{
+    background: linear-gradient(#7f37c9,#ff2992, #ff9807);
+    background-size: 200%;
+    background-position: 0% 50%;
+    animation: 5s ease infinite;
+    background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: 100;
+    transition: all ease 0.2s;
     border-radius: 20px;
-  }
+    padding: 0.5rem;
+}
+#instagram:hover {
+    transform: scale(1.05);
+}
+#whatsapp {
+    background-color: #25d366;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: 100;
+    transition: all ease 0.2s;
+    
+}
+#whatsapp:hover {
+    transform: scale(1.05);
+}
   
   footer {
     background: #333;
@@ -193,20 +246,20 @@ color: #fff;
         transition: all 0.5s ease;
         height: 50vh;
         z-index: -1;
+        right: 0%;
     }
     .nav_menu.active {
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
-        background-color: #b98446;
+        background-color: #ac712e;
         z-index: 99;
         height: 50vh;
         font-size: 1.6rem;
         max-width: 100%;
         padding: 0;
         right: 0%;
-       
-        
+        border-top: #333 solid 1px;
         
     }
     .logo {
@@ -261,6 +314,7 @@ color: #fff;
         left: 50%;
         right: 50%;
     }
+    
 }
 @media screen and (max-width: 825px) {
     .grid-cardapio {
